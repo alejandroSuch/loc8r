@@ -24,7 +24,8 @@ mixin locationPanel(lat,lng)
         .panel-heading
             h2.panel-title Location map
         .panel-body
-            img.img-responsive.img-rounded(src="http://maps.googleapis.com/maps/api/staticmap?center=#{lat},#{lng}&zoom=13&scale=false&size=400x350&maptype=roadmap&format=png&visual_refresh=true")
+
+            img.img-responsive.img-rounded(src="http://maps.googleapis.com/maps/api/staticmap?center=" + lat + "," + lng + "&zoom=13&scale=false&size=400x350&maptype=roadmap&format=png&visual_refresh=true")
 
 mixin review(review)
     .row
