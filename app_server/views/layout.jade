@@ -1,0 +1,31 @@
+doctype html
+html
+  head
+    meta(name='viewport', content='width=device-width,initial-scale=1.0')
+    title= title
+    link(rel='stylesheet', href='/scripts/bootstrap/dist/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    .navbar.navbar-default.navbar-fixed-top
+      .container
+        .navbar-header
+          a.navbar-brand(href="/") Loc8r
+          button.navbar-toggle(type="button", data-toggle="collapse", data-target="#navbar-main")
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+        #navbar-main.navbar-collapse.collapse
+          ul.nav.navbar-nav
+            li
+              a(href='/about/') About
+
+    .container.main-block
+      block content
+
+      .footer
+        .row
+          .col-xs-12
+            small &copy; Alejandro Such 2016
+
+    script(type='text/javascript',src='https://code.jquery.com/jquery-2.2.3.min.js',integrity='sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=',crossorigin='anonymous')
+    script(type='text/javascript',src='/scripts/bootstrap/dist/js/bootstrap.min.js')
