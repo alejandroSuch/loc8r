@@ -1,7 +1,7 @@
 extends ../layout
 
 include ./mixins/location-mixin
-include ./mixins/pageheader-mixin
+include ../mixins/pageheader-mixin
 
 block content
     + pageHeader(pageHeader.title, pageHeader.strapline)
@@ -12,7 +12,7 @@ block content
                 each location in locations
                     + location(location)
         .col-xs-12.col-sm-4
-            p.lead #leadText
+            p.lead #{leadText}
 
 
 

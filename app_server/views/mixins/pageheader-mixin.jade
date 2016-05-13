@@ -1,0 +1,11 @@
+mixin pageHeader(title, strapline)
+    if(!!strapline)
+        #banner.page-header
+            .row
+                .col-lg-6
+                    h1 #{title}
+                    small &nbsp;#{strapline}
+    else
+        .row.page-header
+            .col-lg-12
+                h1 #{title}
